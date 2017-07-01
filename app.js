@@ -14,21 +14,21 @@ app.use(express.static(path.join(__dirname)));
 var count = 0;
 var http = require("http");
 
-myFunctionHAHAHA();
+// herokuKeepAwake();
 
-function myFunctionHAHAHA(){
+function herokuKeepAwake(){
 	var start = new Date().getTime() / 1000;
 	setInterval(function() {
 		console.log("7312 Awaken"+count++);
 	    http.get("http://shubhamtwilio.herokuapp.com");
 	    http.get("http://syncpro.herokuapp.com");
-	    // http.get("http://shubham-great-livings.herokuapp.com");
-	    // http.get("http://resumeselector.herokuapp.com");
-	    // http.get("http://mediabuzznet.herokuapp.com");
-	    // http.get("http://java-nodejs-blog.herokuapp.com");
-	    // http.get("http://visitorsgooglemap.herokuapp.com");
-	    // http.get("http://shubhamtwilio.herokuapp.com");
-	}, 1); // every 5 minutes (300000)
+	    http.get("http://shubhamyeole.herokuapp.com");
+	    http.get("http://shubham-great-livings.herokuapp.com");
+	    http.get("http://resumeselector.herokuapp.com");
+	    http.get("http://mediabuzznet.herokuapp.com");
+	    http.get("http://java-nodejs-blog.herokuapp.com");
+	    http.get("http://visitorsgooglemap.herokuapp.com");
+	}, 300000); // every 5 minutes (300000)
 	var end = new Date().getTime() / 1000;
 
 	console.log("TIMER: "+(end-start));
