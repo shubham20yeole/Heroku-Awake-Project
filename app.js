@@ -21,7 +21,7 @@ function myFunctionHAHAHA(){
 	setInterval(function() {
 		console.log("7312 Awaken"+count++);
 	    http.get("http://shubhamtwilio.herokuapp.com");
-	    // http.get("http://shubhamyeole.herokuapp.com");
+	    http.get("http://syncpro.herokuapp.com");
 	    // http.get("http://shubham-great-livings.herokuapp.com");
 	    // http.get("http://resumeselector.herokuapp.com");
 	    // http.get("http://mediabuzznet.herokuapp.com");
