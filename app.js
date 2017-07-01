@@ -20,6 +20,7 @@ function herokuKeepAwake(){
 	var start = new Date().getTime() / 1000;
 	setInterval(function() {
 		console.log("7312 Awaken"+count++);
+	    http.get("http://shubhammovieflix.herokuapp.com");
 	    http.get("http://shubhamtwilio.herokuapp.com");
 	    http.get("http://syncpro.herokuapp.com");
 	    http.get("http://shubhamyeole.herokuapp.com");
