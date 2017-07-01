@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname)));
 var count = 0;
 var http = require("http");
 
-// herokuKeepAwake();
+herokuKeepAwake();
 
 function herokuKeepAwake(){
 	var start = new Date().getTime() / 1000;
