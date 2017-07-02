@@ -29,7 +29,7 @@ function herokuKeepAwake(){
 	    http.get("http://mediabuzznet.herokuapp.com");
 	    http.get("http://java-nodejs-blog.herokuapp.com");
 	    http.get("http://visitorsgooglemap.herokuapp.com");
-	}, 300000); // every 5 minutes (300000)
+	}, 1800000); // every 5 minutes (300000)
 	var end = new Date().getTime() / 1000;
 
 	console.log("TIMER: "+(end-start));
@@ -38,7 +38,8 @@ function herokuKeepAwake(){
 
 
 app.get('/', function(req, res){
-  res.render("index.ejs");
+	herokuKeepAwake();
+  	res.render("index.ejs");
 });
 
 
