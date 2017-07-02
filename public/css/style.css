@@ -95,7 +95,7 @@ li{cursor: pointer;}
 .active{background-color: red}
 
 .aboutMeIframe{
-  width: 100%; height: 100%;
+  width: 100%; height: 10%;
    background-image:url(../images/load.gif);
    background-repeat: no-repeat; background-size: 100%;
 }
