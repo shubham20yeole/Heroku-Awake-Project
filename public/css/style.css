@@ -1,3 +1,7 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .navbar {
      margin-bottom: 50px;
   border-radius: 0;
@@ -95,7 +99,10 @@ li{cursor: pointer;}
 .active{background-color: red}
 
 .aboutMeIframe{
-  width: 100%; height: 10%;
+  width: 100%; height: 60%;
    background-image:url(../images/load.gif);
    background-repeat: no-repeat; background-size: 100%;
 }
+
+.headerBlock p{font-size: 2em; font-weight: bold; text-align: center; padding-right: 2%;}
+.webPageBlocks p{font-size: 2em; font-weight: bold; text-align: center; padding: 2%; background-color: #f5de50; color: #205081}
